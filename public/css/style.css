@@ -1,0 +1,41 @@
+body {
+    font-family: monospace ; 
+}
+
+.place {
+    margin: 250px ;
+    margin-left: 400px;
+} 
+.bar {
+    width: 80%;
+    height:50px;
+    background-color: rgb(70, 85, 129);
+    font-weight: bold
+}
+
+.button {
+    padding: 9px 9px;
+    font-size: 17px;
+    background-color: cornflowerblue;
+}
+
+.para {
+    font-size: 30px;
+    line-height: 10px;
+    /* font-weight: bold; */
+    margin: -200px ;
+    margin-left: 200px;
+}
+
+
+.heading {
+    margin: 100px ;
+    margin-left: 450px;
+    font-size: 50px;
+}
+
+.url {
+    font-size: 40px;
+    margin-left: 450px;
+    color: blue;
+}
