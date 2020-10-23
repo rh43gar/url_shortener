@@ -4,18 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
     <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-    <form class="place" action="/shortUrls" method="POST">
-        <h1>URL Shortener</h1>
-        <input type="url" name="url" class="bar" value="https://example.com" required>
-        <input type="submit" class="button" value="shorten"> 
-    </form>
-    <div class="para">
-        <p>Url shortening is a method that takes long URLs and squeezes them</p>
-        <p> &nbsp; into fewer characters to make a link that is easier to share</p>
-        <br><br>
+    <div class="main">
+        <h1 class="heading">URL Shortener</h1>
+        <div class="for">
+            <form action="/shortUrls" method="POST">
+                <input type="url" name="url" class="url-form" value="https://example.com" required>
+                <button class="url-button" type="submit">
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </button> 
+            </form>
+        </div>
+        <div class="para">
+            <p>Url shortening is a technique that takes long URLs and squeezes them</p>
+            <p> &nbsp; into fewer characters to make a link that is easier to share</p>
+            <br><br>
+        </div>
     </div>
 </body>
 </html>
