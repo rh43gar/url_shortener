@@ -53,3 +53,13 @@ form button:hover {
     display: inline-block
 }
 
+.url-div {
+    padding: 0.5rem;
+    font-size: 20px;
+    background: white;
+}
+
+.para-url {
+    padding: 22px;
+    font-size: 20px;
+}

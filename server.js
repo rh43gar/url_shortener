@@ -19,9 +19,8 @@ app.use('/', urlRouter)
 
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, './', 'views', 'index.html'))
+    const Url = { }
+    res.render('index', { Url: Url })
 })
-
-
 
 app.listen(process.env.PORT)

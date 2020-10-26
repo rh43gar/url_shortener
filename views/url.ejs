@@ -4,10 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css">
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
 </head>
 <body>
-        <p class="url">your shortened url is :</p>
-        <a href="<%= Url.shortenedUrls %>" class="url">https://localhost/<%= Url.shortenedUrls %></a>
+    <div class="main">
+        <h1 class="heading">URL Shortener</h1>
+        <div class="for">
+            <form action="/shortUrls" method="POST">
+                <input type="url" name="url" class="url-input" value="https://example.com" required>
+                <button class="url-button" type="submit">
+                    <i class="fas fa-arrow-alt-circle-right"></i>
+                </button> 
+            </form>
+        </div>
+        <div class="para">
+            <p>Url shortening is a technique that takes long URLs and squeezes them</p>
+            <p> &nbsp; into fewer characters to make a link that is easier to share</p>
+            <br><br>
+        </div>
+        <div class="para-url"><p >Your shortened URL is</p></div>
+        <a href="<%= Url.shortenedUrls %>" class="shortUrl">
+            <script>
+                const urlInput = document.querySelector(".url-input")
+                const shortUrl = document.querySelector(".shortUrl")
+                const button = document.querySelector(".url-button")
+        
+                window.addEventListener('load', shortening)
+        
+                function shortening(e) {
+                    e.preventDefault()
+                    let shortenedurl = '<%=Url.shortenedUrls%>'
+                    console.log("j")
+                    const urlDiv = document.createElement('div')
+                    urlDiv.classList.add("url-div")
+                    urlDiv.innerText = "https://localhost:1234/"+shortenedurl
+                    shortUrl.appendChild(urlDiv)
+                }
+             </script>     
+        </a>
+    </div>   
 </body>
 </html>
